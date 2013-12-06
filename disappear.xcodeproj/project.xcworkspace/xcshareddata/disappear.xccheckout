@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>633BC030-1C18-496E-A0D7-27217F43D449</string>
+	<key>IDESourceControlProjectName</key>
+	<string>disappear</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>33AD4C73-F5E9-4A99-9E91-949A29337E3E</key>
+		<string>https://github.com/xiaochuios/disappear-master-2.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>disappear.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>33AD4C73-F5E9-4A99-9E91-949A29337E3E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/xiaochuios/disappear-master-2.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>33AD4C73-F5E9-4A99-9E91-949A29337E3E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>33AD4C73-F5E9-4A99-9E91-949A29337E3E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>disappear-master-2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
