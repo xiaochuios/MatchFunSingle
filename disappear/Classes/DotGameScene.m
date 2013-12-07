@@ -51,7 +51,7 @@
     m_singleplay=[CCMenuItemImage itemWithNormalImage:@"Images/play_now.png" selectedImage:@"Images/play_now.png" target:self selector:@selector(playingNow:)];
     
     
-    m_playnow = [CCMenuItemImage itemWithNormalImage:@"Images/play_now.png" selectedImage:@"Images/play_now.png" target:self selector:@selector(playingdouble:)];
+    m_playnow = [CCMenuItemImage itemWithNormalImage:@"Images/multiple_player.png" selectedImage:@"Images/multiple_player.png" target:self selector:@selector(playingdouble:)];
     
     
     

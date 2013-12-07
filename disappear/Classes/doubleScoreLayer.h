@@ -1,5 +1,5 @@
 //
-//  TopScoreLayer.h
+
 //  disappear
 //
 //  Created by CpyShine on 13-6-7.
@@ -10,15 +10,15 @@
 #import "cocos2d.h"
 
 
-@interface TopScoreLayer : CCLayerColor {
+@interface doubleScoreLayer : CCLayerColor {
     
     CCLabelTTF * m_logoLabel;
     
-//    CCLabelTTF * m_levelLabel;
-//    
-//    CCLabelTTF * m_goldlabel;
-//    
-//    CCLabelTTF * m_highScore;
+    //    CCLabelTTF * m_levelLabel;
+    //
+    //    CCLabelTTF * m_goldlabel;
+    //
+    //    CCLabelTTF * m_highScore;
     CCMenuItemImage * m_exittomain;
     
     CCLabelTTF * m_thisRound;

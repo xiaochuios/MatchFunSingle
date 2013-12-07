@@ -9,9 +9,9 @@
 #ifndef disappear_config_h
 #define disappear_config_h
 
-#define TOTALX 6
-#define TOTALY 6
-#define TOTALS 36
+#define TOTALX 5
+#define TOTALY 5
+#define TOTALS 25
 
 #define SPAWN_DROPDOWN_TIME 0.5
 #define SPAWN_JUMP_TIME 0.3
@@ -20,9 +20,9 @@
 #define RESET_JUMP_TIME 0.3
 #define RESET_JUMP_TIMES 3
 
-#define DRAWSPRITE_RADIUES 12
-#define DRAWSPRITE_WIDTH 24.0
-#define DRAWSPRITE_HEIGH 24.0
+#define DRAWSPRITE_RADIUES 10
+#define DRAWSPRITE_WIDTH 48.0
+#define DRAWSPRITE_HEIGH 30.0
 
 #define AddHeigh 100
 #define addWidth 40

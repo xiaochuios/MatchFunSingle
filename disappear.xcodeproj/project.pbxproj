@@ -21,6 +21,9 @@
 		188DFAAE18521F7100AEB02C /* DotdoubleHudController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFAAD18521F7100AEB02C /* DotdoubleHudController.m */; };
 		188DFAB11852204C00AEB02C /* DatadoubleHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFAB01852204C00AEB02C /* DatadoubleHandle.m */; };
 		188DFAB5185223D300AEB02C /* doublePauseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 188DFAB4185223D300AEB02C /* doublePauseLayer.m */; };
+		18F870B91852EEE900441EDE /* doubleUpStateLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F870B81852EEE900441EDE /* doubleUpStateLayer.m */; };
+		18F870BC1853110B00441EDE /* doubleScoreLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F870BB1853110B00441EDE /* doubleScoreLayer.m */; };
+		18F870BF185312DC00441EDE /* doubleDownStateLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F870BE185312DC00441EDE /* doubleDownStateLayer.m */; };
 		2D09EF4E175C6846005035C6 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09EF4D175C6846005035C6 /* DataController.m */; };
 		2D3A14791758817E00B229EF /* DotGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D3A14781758817E00B229EF /* DotGameScene.m */; };
 		2D4660851761CF8500A69024 /* TopScoreLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4660841761CF8500A69024 /* TopScoreLayer.m */; };
@@ -183,6 +186,12 @@
 		188DFAB3185223D300AEB02C /* doublePauseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doublePauseLayer.h; sourceTree = "<group>"; };
 		188DFAB4185223D300AEB02C /* doublePauseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doublePauseLayer.m; sourceTree = "<group>"; };
 		18EB3438184BAD4E0002CB3B /* DataHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataHandle.h; sourceTree = "<group>"; };
+		18F870B71852EEE900441EDE /* doubleUpStateLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubleUpStateLayer.h; sourceTree = "<group>"; };
+		18F870B81852EEE900441EDE /* doubleUpStateLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubleUpStateLayer.m; sourceTree = "<group>"; };
+		18F870BA1853110B00441EDE /* doubleScoreLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubleScoreLayer.h; sourceTree = "<group>"; };
+		18F870BB1853110B00441EDE /* doubleScoreLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubleScoreLayer.m; sourceTree = "<group>"; };
+		18F870BD185312DC00441EDE /* doubleDownStateLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = doubleDownStateLayer.h; sourceTree = "<group>"; };
+		18F870BE185312DC00441EDE /* doubleDownStateLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = doubleDownStateLayer.m; sourceTree = "<group>"; };
 		2D09EF4C175C6846005035C6 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
 		2D09EF4D175C6846005035C6 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 		2D3A14771758817E00B229EF /* DotGameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DotGameScene.h; sourceTree = "<group>"; };
@@ -520,6 +529,8 @@
 				188DFA98185216D600AEB02C /* deleteonebutton.png */,
 				188DFA99185216D600AEB02C /* stoptimebutton_back.png */,
 				188DFA9A185216D600AEB02C /* stoptimebutton.png */,
+				18F870BA1853110B00441EDE /* doubleScoreLayer.h */,
+				18F870BB1853110B00441EDE /* doubleScoreLayer.m */,
 			);
 			name = HighScore;
 			sourceTree = "<group>";
@@ -964,6 +975,10 @@
 				188DFAAD18521F7100AEB02C /* DotdoubleHudController.m */,
 				188DFAB3185223D300AEB02C /* doublePauseLayer.h */,
 				188DFAB4185223D300AEB02C /* doublePauseLayer.m */,
+				18F870B71852EEE900441EDE /* doubleUpStateLayer.h */,
+				18F870B81852EEE900441EDE /* doubleUpStateLayer.m */,
+				18F870BD185312DC00441EDE /* doubleDownStateLayer.h */,
+				18F870BE185312DC00441EDE /* doubleDownStateLayer.m */,
 			);
 			name = huds;
 			sourceTree = "<group>";
@@ -1038,6 +1053,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = CpyShine;
+				TargetAttributes = {
+					2D6A2F891755C68400E2883A = {
+						DevelopmentTeam = 864XSL2U7M;
+					};
+				};
 			};
 			buildConfigurationList = 2D6A2F851755C68400E2883A /* Build configuration list for PBXProject "disappear" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1116,6 +1136,7 @@
 				2D6A2FFC1755C68400E2883A /* CCDrawingPrimitives.m in Sources */,
 				2D6A2FFF1755C68400E2883A /* CCDrawNode.m in Sources */,
 				2D6A30021755C68500E2883A /* ccFPSImages.m in Sources */,
+				18F870BC1853110B00441EDE /* doubleScoreLayer.m in Sources */,
 				2D6A30051755C68500E2883A /* CCGLProgram.m in Sources */,
 				2D6A30081755C68500E2883A /* ccGLStateCache.m in Sources */,
 				2D6A300B1755C68500E2883A /* CCGrabber.m in Sources */,
@@ -1158,6 +1179,7 @@
 				2D6A308B1755C68500E2883A /* CCTransition.m in Sources */,
 				2D6A308E1755C68500E2883A /* CCTransitionPageTurn.m in Sources */,
 				2D6A30911755C68500E2883A /* CCTransitionProgress.m in Sources */,
+				18F870BF185312DC00441EDE /* doubleDownStateLayer.m in Sources */,
 				2D6A30951755C68600E2883A /* cocos2d.m in Sources */,
 				2D6A309C1755C68600E2883A /* CCDirectorIOS.m in Sources */,
 				2D6A309F1755C68600E2883A /* CCES2Renderer.m in Sources */,
@@ -1174,6 +1196,7 @@
 				2D6A30C41755C68600E2883A /* CCFileUtils.m in Sources */,
 				2D6A30C71755C68600E2883A /* CCProfiling.m in Sources */,
 				2D6A30C91755C68600E2883A /* ccUtils.c in Sources */,
+				18F870B91852EEE900441EDE /* doubleUpStateLayer.m in Sources */,
 				2D6A30CD1755C68600E2883A /* CCVertex.m in Sources */,
 				2D6A30D01755C68600E2883A /* CGPointExtension.m in Sources */,
 				2D6A30D31755C68600E2883A /* NSThread+performBlock.m in Sources */,
@@ -1222,6 +1245,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1243,6 +1267,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1262,6 +1287,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1274,6 +1301,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1283,6 +1311,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = disappear/Prefix.pch;
@@ -1294,6 +1324,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;

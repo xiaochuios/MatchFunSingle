@@ -1,23 +1,23 @@
 //
-//  TopScoreLayer.m
+
 //  disappear
 //
 //  Created by CpyShine on 13-6-7.
 //  Copyright 2013年 CpyShine. All rights reserved.
 //
 
-#import "TopScoreLayer.h"
+#import "doubleScoreLayer.h"
 
 #import "DataController.h"
-#import "DotPlayingScnen.h"
+#import "DotPlayingdoubleScnen.h"
 #import "DotGameScene.h"
 
-@implementation TopScoreLayer
+@implementation doubleScoreLayer
 
 +(CCScene *)scene{
     CCScene * scene = [CCScene node];
     
-    TopScoreLayer * layer = [TopScoreLayer node];
+    doubleScoreLayer * layer = [doubleScoreLayer node];
     
     [scene addChild:layer];
     [layer startAnimationDisplay];
@@ -36,7 +36,7 @@
         [m_logoLabel setPosition:ccp(s.width/2, s.height - 50)];
         [self addChild:m_logoLabel];
         
-//        CCSprite * levelSprite
+        //        CCSprite * levelSprite
         CCSprite * thisRound = [CCSprite spriteWithFile:@"Images/thisRoundScore.png"];
         [thisRound setPosition:ccp(s.width/2, s.height-130)];
         [self addChild:thisRound];
@@ -46,58 +46,58 @@
         [thisRound addChild:m_thisRound];
         
         
-//        CCSprite * highScore = [CCSprite spriteWithFile:@"Images/HighScore.png"];
-//        [highScore setPosition:ccp(s.width/2, s.height-130)];
-//        [self addChild:highScore];
-//        m_highScore = [CCLabelTTF labelWithString:@"" fontName:@"Arial" fontSize:18];
-//        [m_highScore setColor:ccc3(0, 0, 0)];
-//        [m_highScore setPosition:ccp(40, 10)];
-//        [highScore addChild:m_highScore];
-//        
-//        CCSprite * goldSprite = [CCSprite spriteWithFile:@"Images/gold.png"];
-//        [goldSprite setPosition:ccp(s.width-60, s.height-130)];
-//        [self addChild:goldSprite];
-//        m_goldlabel = [CCLabelTTF labelWithString:@"" fontName:@"Arial" fontSize:18];
-//        [m_goldlabel setColor:ccc3(0, 0, 0)];
-//        [m_goldlabel setPosition:ccp(40, 10)];
-//        [goldSprite addChild:m_goldlabel];
-//        
-//        
-//        CCSprite * timerSprite = [CCSprite spriteWithFile:@"Images/timerb.png"];
-//        [timerSprite setAnchorPoint:ccp(0, 0)];
-//        [timerSprite setPosition:ccp(20, s.height - 200)];
-//        [self addChild:timerSprite];
-//        m_expProgress = [CCProgressTimer progressWithSprite:[CCSprite spriteWithFile:@"Images/timer.png"]];
-//        [m_expProgress setAnchorPoint:ccp(0,0)];
-//        [m_expProgress setType:kCCProgressTimerTypeBar];
-//        [m_expProgress setMidpoint:ccp(0, 0)];
-//        [m_expProgress setBarChangeRate:ccp(1,0)];
-//        [m_expProgress setPosition:ccp(3.5, 4.0)];
-//        [timerSprite addChild:m_expProgress];
-//        [m_expProgress setPercentage:60];
-//        
-//        
-//        m_levelLabel = [CCLabelTTF labelWithString:@"level:" fontName:@"Arial" fontSize:18];
-//        [m_levelLabel setAnchorPoint:ccp(0, 0.5)];
-//        [m_levelLabel setColor:ccc3(0, 0, 0)];
-//        [m_levelLabel setPosition:ccp(5, 20)];
-//        [timerSprite addChild:m_levelLabel];
-//        
-//        m_tableLayer =  [TableLayer node];
-//        [m_tableLayer setPosition:ccp(60, s.height/6)];
-//        [self addChild:m_tableLayer];
+        //        CCSprite * highScore = [CCSprite spriteWithFile:@"Images/HighScore.png"];
+        //        [highScore setPosition:ccp(s.width/2, s.height-130)];
+        //        [self addChild:highScore];
+        //        m_highScore = [CCLabelTTF labelWithString:@"" fontName:@"Arial" fontSize:18];
+        //        [m_highScore setColor:ccc3(0, 0, 0)];
+        //        [m_highScore setPosition:ccp(40, 10)];
+        //        [highScore addChild:m_highScore];
+        //
+        //        CCSprite * goldSprite = [CCSprite spriteWithFile:@"Images/gold.png"];
+        //        [goldSprite setPosition:ccp(s.width-60, s.height-130)];
+        //        [self addChild:goldSprite];
+        //        m_goldlabel = [CCLabelTTF labelWithString:@"" fontName:@"Arial" fontSize:18];
+        //        [m_goldlabel setColor:ccc3(0, 0, 0)];
+        //        [m_goldlabel setPosition:ccp(40, 10)];
+        //        [goldSprite addChild:m_goldlabel];
+        //
+        //
+        //        CCSprite * timerSprite = [CCSprite spriteWithFile:@"Images/timerb.png"];
+        //        [timerSprite setAnchorPoint:ccp(0, 0)];
+        //        [timerSprite setPosition:ccp(20, s.height - 200)];
+        //        [self addChild:timerSprite];
+        //        m_expProgress = [CCProgressTimer progressWithSprite:[CCSprite spriteWithFile:@"Images/timer.png"]];
+        //        [m_expProgress setAnchorPoint:ccp(0,0)];
+        //        [m_expProgress setType:kCCProgressTimerTypeBar];
+        //        [m_expProgress setMidpoint:ccp(0, 0)];
+        //        [m_expProgress setBarChangeRate:ccp(1,0)];
+        //        [m_expProgress setPosition:ccp(3.5, 4.0)];
+        //        [timerSprite addChild:m_expProgress];
+        //        [m_expProgress setPercentage:60];
+        //
+        //
+        //        m_levelLabel = [CCLabelTTF labelWithString:@"level:" fontName:@"Arial" fontSize:18];
+        //        [m_levelLabel setAnchorPoint:ccp(0, 0.5)];
+        //        [m_levelLabel setColor:ccc3(0, 0, 0)];
+        //        [m_levelLabel setPosition:ccp(5, 20)];
+        //        [timerSprite addChild:m_levelLabel];
+        //
+        //        m_tableLayer =  [TableLayer node];
+        //        [m_tableLayer setPosition:ccp(60, s.height/6)];
+        //        [self addChild:m_tableLayer];
         m_exittomain = [CCMenuItemImage itemWithNormalImage:@"Images/TopExit.png"
                                               selectedImage:@"Images/TopExit.png" target:self selector:@selector(exitToMainScnen)];
         
         m_imageItem = [CCMenuItemImage itemWithTarget:self selector:@selector(imageItemPressed)];
         
         CCMenu *menu = [CCMenu menuWithItems:m_exittomain,m_imageItem, nil];
-       
+        
         [menu setPosition:ccp(0, 0)];
         [m_imageItem setPosition:ccp(s.width/2, s.height/2+150)];
         [m_exittomain setPosition:ccp(s.width/2, s.height/2)];
         [self addChild:menu];
- 
+        
         
         [self setVisible:false];
         
@@ -144,7 +144,7 @@
     [self loadAnimation:0 :[[DataController getSharedDataController] readPlayerDefaultProperty]];
     
     CCTexture2D * texture = [[CCTextureCache sharedTextureCache] addImage:@"Images/TopExit.png"];
-//    [m_imageItem setNormalImage:texture];
+    //    [m_imageItem setNormalImage:texture];
     CCSpriteFrame *frame = [CCSpriteFrame frameWithTexture:texture rect:CGRectMake(0, 0, texture.contentSize.width, texture.contentSize.height)];
     [m_imageItem setNormalSpriteFrame:frame];
     
@@ -155,7 +155,7 @@
     
     if (m_imageButtonResponseType) {
         
-        CCScene * playingScene = [DotPlayingScnen scene];
+        CCScene * playingScene = [DotPlayingdoubleScnen scene];
         
         [[CCDirector sharedDirector] replaceScene:[CCTransitionMoveInR transitionWithDuration:0.2 scene:playingScene]];
     }else{
@@ -169,7 +169,7 @@
     NSInteger level = 1;
     NSInteger gold = 1;
     long int exp = 0;
- 
+    
     
     if (array) {
         NSNumber * l = [array objectAtIndex:0];
@@ -181,11 +181,11 @@
         exp = e.longValue;
     }
     
-//    [m_levelLabel setString:[NSString stringWithFormat:@"level:%d",level]];
-//    [m_goldlabel setString:[NSString stringWithFormat:@"%d",gold]];
+    //    [m_levelLabel setString:[NSString stringWithFormat:@"level:%d",level]];
+    //    [m_goldlabel setString:[NSString stringWithFormat:@"%d",gold]];
     [m_thisRound setString:[NSString stringWithFormat:@"%d",score]];
     
-//    [m_highScore setString:[NSString stringWithFormat:@"%d",high]];
+    //    [m_highScore setString:[NSString stringWithFormat:@"%d",high]];
     
     if (m_imageButtonResponseType) {
         [m_thisRound setString:[NSString stringWithFormat:@"%d",score]];
@@ -193,7 +193,7 @@
         [m_thisRound setString:@"--"];
     }
     
-
+    
 }
 
 -(BOOL)ccTouchBegan:(UITouch *)touch withEvent:(UIEvent *)event{
@@ -229,9 +229,9 @@
         m_canTriggerAction = false;
         
         if (m_touchStartLocation.x < local.x) {
-
+            
         }else{
-
+            
         }
     }
 }
@@ -241,7 +241,7 @@
 //}
 
 -(void)ccTouchEnded:(UITouch *)touch withEvent:(UIEvent *)event{
-//    NSLog(@"TOUCH END!");
+    //    NSLog(@"TOUCH END!");
     
     if (m_canTriggerAction) {
         return;
@@ -258,12 +258,12 @@
         m_canTriggerAction = false;
         
         if (m_touchStartLocation.x < local.x) {
-
+            
         }else{
- 
+            
         }
     }
-
+    
 }
 
 -(void)onExit{

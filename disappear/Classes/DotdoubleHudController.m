@@ -10,10 +10,10 @@
 
 #import "DotPlayingdoubleScnen.h"
 
-#import "DownStateLayer.h"
-#import "UpStateLayer.h"
+#import "doubleDownStateLayer.h"
+#import "doubleUpStateLayer.h"
 #import "doublePauseLayer.h"
-#import "TopScoreLayer.h"
+#import "doubleScoreLayer.h"
 
 @implementation DotdoubleHudController
 
@@ -23,10 +23,10 @@
     self = [super init];
     if (self) {
         
-        m_downStateLayer    = [DownStateLayer node];
-        m_upstateLayer      = [UpStateLayer node];
+        m_downStateLayer    = [doubleDownStateLayer node];
+        m_upstateLayer      = [doubleUpStateLayer node];
         m_pauseLayer        = [doublePauseLayer node];
-        m_topScoreLayer     = [TopScoreLayer node];
+        m_topScoreLayer     = [doubleScoreLayer node];
         
         
         [self addChild:m_downStateLayer z:2];

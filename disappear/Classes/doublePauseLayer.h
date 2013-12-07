@@ -14,6 +14,9 @@
     CCMenuItemImage * m_resume;
     CCMenuItemImage * m_restart;
     CCMenuItemImage * m_exittomain;
+    CCMenuItemImage * m_resume1;
+    CCMenuItemImage * m_restart1;
+    CCMenuItemImage * m_exittomain1;
     
 }
 

@@ -10,18 +10,18 @@
 #import "cocos2d.h"
 #import "configdouble.h"
 
-@class UpStateLayer;
-@class DownStateLayer;
+@class doubleUpStateLayer;
+@class doubleDownStateLayer;
 @class doublePauseLayer;
-@class TopScoreLayer;
+@class doubleScoreLayer;
 
 @interface DotdoubleHudController : CCNode {
     
-    UpStateLayer * m_upstateLayer;
-    DownStateLayer * m_downStateLayer;
+    doubleUpStateLayer * m_upstateLayer;
+    doubleDownStateLayer * m_downStateLayer;
     doublePauseLayer * m_pauseLayer;
     
-    TopScoreLayer * m_topScoreLayer;
+    doubleScoreLayer * m_topScoreLayer;
     
     BOOL m_pause;
 }

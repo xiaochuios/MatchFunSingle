@@ -35,13 +35,13 @@ static inline int calcIndex(int x,int y){
             for (int x = 0; x<TOTALX; x++) {
                 
                 DrawSprite * drawS = [DrawSprite node];
-                [drawS spawnAtX:x Y:y Width:DRAWSPRITE_WIDTH Height:DRAWSPRITE_HEIGH addWidth2:100 AddHeigh2:200];
+                [drawS spawnAtX:x Y:y Width:DRAWSPRITE_WIDTH Height:DRAWSPRITE_HEIGH addWidth2:200 AddHeigh2:200];
                 [m_drawSpriteArray1 addObject:drawS];
                 [self addChild:drawS z:1];
                 
                 DrawSprite * drawZ = [DrawSprite node];
                 [m_drawSpriteArray2 addObject:drawZ];
-                [drawZ spawnAtX:x Y:y Width:DRAWSPRITE_WIDTH Height:DRAWSPRITE_HEIGH addWidth2:400 AddHeigh2:200];
+                [drawZ spawnAtX:x Y:y Width:DRAWSPRITE_WIDTH Height:DRAWSPRITE_HEIGH addWidth2:200 AddHeigh2:650];
                 [self addChild:drawZ z:1];
                 
             }
